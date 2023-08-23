@@ -1,0 +1,10 @@
+{
+    "rocket_mass": 1000,
+    "rocket_thrust": 5000,
+    "target_altitude": 1000,
+    "time_step": 0.1,
+    "gravity": 9.81,
+    "air_density": 1.225,
+    "simulation_time": 100
+  }
+  
