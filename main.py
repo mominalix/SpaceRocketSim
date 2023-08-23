@@ -1,6 +1,6 @@
 import json
 from simulator import Rocket
-from parallel import main as parallel_main
+from parallel import parallel_main
 from visualization import visualize_rocket
 
 def load_config(filename):
@@ -9,10 +9,10 @@ def load_config(filename):
 
 def main():
     config = load_config("config.json")
-    rocket = Rocket(config["rocket_mass"], config["rocket_thrust"], config["target_altitude"])
+    rocket = Rocket(config["rocket_mass"], config["rocket_thrust"], config["target_altitude"],config["air_density"] )
 
     # Pass rocket and config to parallel processing module
-    parallel_main()
+    parallel_main(config)
 
     # Pass rocket and config to OpenGL visualization module
     visualize_rocket(rocket, config)

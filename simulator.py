@@ -1,15 +1,17 @@
 class Rocket:
-    def __init__(self, mass, thrust, target_altitude):
+    def __init__(self, mass, thrust, target_altitude,air_density):
         self.mass = mass
         self.thrust = thrust
         self.target_altitude = target_altitude
-        self.fuel_consumption_rate = 0.1  # Arbitrary value for fuel consumption
+        self.air_density = air_density  # Add air_density as an attribute
+        self.fuel_consumption_rate = 0.1
 
     def calculate_thrust(self):
         # Calculate thrust based on engine efficiency and other factors
         return self.thrust
 
     def calculate_drag(self, velocity):
+        drag_coefficient, cross_sectional_area=0.3,0.05
         # Calculate drag based on velocity, rocket shape, and air density
         return 0.5 * self.air_density * velocity**2 * drag_coefficient * cross_sectional_area
 
@@ -23,11 +25,12 @@ class RocketSimulator:
         self.time_step = config["time_step"]
         self.gravity = config["gravity"]
         self.air_density = config["air_density"]
+        self.config=config
 
     def simulate(self):
         altitude = 0
         velocity = 0
-        time = config["simulation_time"]
+        time = self.config["simulation_time"]
 
         while altitude < self.rocket.target_altitude and time > 0:
             thrust = self.rocket.calculate_thrust()
