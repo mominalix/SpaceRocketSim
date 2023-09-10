@@ -44,5 +44,5 @@ By running the `main.py` script, you will trigger the following:
 
 1. Simulate multiple rockets in parallel using the `parallel.py` module.
 2. Visualize rocket takeoff using OpenGL and the `visualization.py` module.
-3. Observe how rockets behave based on physics and environmental factors.
+3. Observe how rocket behaves based on physics and environmental factors.
 
