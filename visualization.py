@@ -6,11 +6,11 @@ from OpenGL.GLU import *
 from simulator import RocketSimulator
 
 def draw_rocket(rocket, altitude):
-    # Implement your rocket drawing code here using OpenGL commands
+    # rocket drawing code
     pass
 
 def draw_environment():
-    # Implement your environment drawing code here using OpenGL commands
+    # environment drawing code
     pass
 
 def visualize_rocket(rocket, config):
