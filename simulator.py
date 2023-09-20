@@ -42,7 +42,7 @@ class RocketSimulator:
             velocity += acceleration * self.time_step
             altitude += velocity * self.time_step
 
-            self.rocket.update_mass(self.time_step)  # Update rocket mass due to fuel consumption
+            self.rocket.update_mass(self.time_step)  # Update rocket mass after fuel consumption
 
             time -= self.time_step
 
