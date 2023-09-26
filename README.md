@@ -23,6 +23,7 @@ The simulation incorporates the following physics and mechanics:
    ```sh
    pip install pygame
    pip install pyopengl
+   pip install pycuda
    ```
 4. Edit the `config.json` file to set rocket properties and simulation parameters.
 5. Run the main script to execute the simulation and visualization:
