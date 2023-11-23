@@ -8,6 +8,11 @@ class Rocket:
 
     def calculate_thrust(self):
         # Calculate thrust based on engine efficiency and other factors
+        engine_efficiency = 0.9
+        other_factors = 1.2
+        thrust = self.thrust * engine_efficiency * other_factors
+
+        return thrust
         return self.thrust
 
     def calculate_drag(self, velocity):
