@@ -13,7 +13,7 @@ class Rocket:
     def calculate_drag(self, velocity):
         drag_coefficient, cross_sectional_area=0.3,0.05
         # Calculate drag based on velocity, rocket shape, and air density
-        return 0.5 * self.air_density * velocity**2 * drag_coefficient * cross_sectional_area
+        return 0.005 * self.air_density * velocity**2 * drag_coefficient * cross_sectional_area
 
     def update_mass(self, time_step):
         # Update mass due to fuel consumption
