@@ -7,30 +7,10 @@ from simulator import RocketSimulator
 
 def draw_rocket(rocket, altitude):
     # Implement your rocket drawing code here using OpenGL commands
-    glPushMatrix()
-    glTranslatef(0, altitude, 0)
-    glColor3f(1.0, 0.0, 0.0)
-    glBegin(GL_TRIANGLES)
-    glVertex3f(-0.5, -0.5, 0.0)
-    glVertex3f(0.5, -0.5, 0.0)
-    glVertex3f(0.0, 0.5, 0.0)
-    glEnd()
-    glPopMatrix()
     pass
 
 def draw_environment():
     # Implement your environment drawing code here using OpenGL commands
-    glPushMatrix()
-    glTranslatef(0, 0, -5)
-    glColor3f(0.0, 1.0, 0.0)
-    glBegin(GL_QUADS)
-    glVertex3f(-1.0, -1.0, 0.0)
-    glVertex3f(1.0, -1.0, 0.0)
-    glVertex3f(1.0, 1.0, 0.0)
-    glVertex3f(-1.0, 1.0, 0.0)
-    glEnd()
-    glPopMatrix()
-    pass
     pass
 
 def visualize_rocket(rocket, config):
